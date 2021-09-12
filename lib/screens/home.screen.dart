@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_najdiprevoz/screens/login.screen.dart';
+import 'package:mobile_najdiprevoz/screens/settings.screen.dart';
 import 'package:mobile_najdiprevoz/screens/trip-listing.screen.dart';
-import 'package:mobile_najdiprevoz/services/auth.service.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.token, this.initialIndex = 0}) : super(key: key);
@@ -26,7 +26,7 @@ class HomeScreenState extends State<HomeScreen> {
     TripListingScreen(),
     LoginScreen(),
     LoginScreen(),
-    LoginScreen(),
+    SettingScreen(),
   ];
 
   @override
@@ -94,15 +94,6 @@ class HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         );
     }
-  }
-}
-
-class LogoutButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return FlatButton(
-        child: Text("Logout"),
-        onPressed: () async => AuthService().logout(context));
   }
 }
 

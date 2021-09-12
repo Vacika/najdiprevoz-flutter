@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Add trip">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/.filecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/app.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/debug_android_application.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/flutter_assets.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/gen_localizations.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/kernel_snapshot.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/kernel_snapshot.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b6df0226eb35168373b85a2b7eef11fd/outputs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/najdiprevoz-flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/najdiprevoz-flutter.iml" afterDir="false" />
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="few fixes">
+      <change afterPath="$PROJECT_DIR$/lib/screens/settings.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/login.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/trip-listing.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/trip-listing.screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/trip-card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/trip-card.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631474201281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="few fixes">
+      <created>1631479342490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631479342490</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -113,14 +99,15 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add trip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add trip" />
+    <MESSAGE value="few fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="few fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/screens/home.screen.dart</url>
-          <line>108</line>
+          <line>99</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
