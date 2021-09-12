@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_najdiprevoz/screens/login.screen.dart';
+import 'package:mobile_najdiprevoz/screens/notifications.screen.dart';
 import 'package:mobile_najdiprevoz/screens/settings.screen.dart';
 import 'package:mobile_najdiprevoz/screens/trip-listing.screen.dart';
 
@@ -25,7 +26,7 @@ class HomeScreenState extends State<HomeScreen> {
   List<Widget> screens = <Widget>[
     TripListingScreen(),
     LoginScreen(),
-    LoginScreen(),
+    NotificationsScreenWidget(),
     SettingScreen(),
   ];
 
