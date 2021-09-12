@@ -3,7 +3,7 @@ import 'package:mobile_najdiprevoz/screens/login.screen.dart';
 import 'package:mobile_najdiprevoz/screens/trip-listing.screen.dart';
 import 'package:mobile_najdiprevoz/services/auth.service.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.token, this.initialIndex = 0}) : super(key: key);
 
   final int initialIndex;
@@ -12,42 +12,88 @@ class HomeScreen extends StatelessWidget {
   factory HomeScreen.fromBase64(String token) => HomeScreen(token: token);
 
   @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return HomeScreenState();
+  }
+}
+
+class HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 0;
+  static const TextStyle optionStyle =
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  List<Widget> screens = <Widget>[
+    TripListingScreen(),
+    LoginScreen(),
+    LoginScreen(),
+    LoginScreen(),
+  ];
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DefaultTabController(
-        initialIndex: initialIndex,
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            toolbarHeight: 85,
-            backgroundColor: Color.fromRGBO(225, 0, 117,1) ,
-            primary: true,
-            bottom: TabBar(
-              indicatorColor: Colors.white,
-              unselectedLabelColor: Colors.white54,
-              labelColor: Colors.white,
-              tabs: [
-                Tab(
-                  icon: Icon(Icons.car_rental),
-                  text: 'Trips',
-                ),
-                Tab(
-                  icon: Icon(Icons.notification_important),
-                  text: 'Notifications',
-                ),
-                Tab(
-                  icon: Icon(Icons.storage),
-                  text: 'Requests',
-                ),
-              ],
-            ),
+    return Scaffold(
+      backgroundColor: Colors.blueGrey[900],
+      appBar: AppBar(
+        title: getTitle(_currentIndex),
+      ),
+      body: Center(child: screens.elementAt(_currentIndex)),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.car_rental), label: 'Trips'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.storage),
+            label: 'Requests',
           ),
-          body: TabBarView(
-            children: [TripListingScreen(), LoginScreen(), LoginScreen()],
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: 'Notifications',
           ),
-        ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
+        currentIndex: _currentIndex,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        elevation: 1,
+        showUnselectedLabels: true,
+        unselectedItemColor: Colors.blueGrey[700],
+        selectedItemColor: Colors.pink,
       ),
     );
+  }
+
+  getTitle(int currentIndex) {
+    switch (currentIndex) {
+      case 0:
+        return Row(
+          children: [Text('TripBuddy'), Text('Trips')],
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        );
+      case 1:
+        return Row(
+          children: [Text('TripBuddy'), Text('Requests')],
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        );
+      case 2:
+        return Row(
+          children: [Text('TripBuddy'), Text('Notifications')],
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        );
+      case 3:
+        return Row(
+          children: [Text('TripBuddy'), Text('Settings')],
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        );
+    }
   }
 }
 
@@ -77,7 +123,6 @@ class LogoutButton extends StatelessWidget {
 //               ? Text("An error occurred${snapshot.error}")
 //               : CircularProgressIndicator()),
 // ),
-
 
 //#d81b60 primary
 // P-Dark #a00037

@@ -31,8 +31,7 @@ class TripListingScreen extends StatelessWidget {
       Scaffold(
           appBar: AppBar(
               title: Row(children: [
-                Text("Trips - " +
-                    DateFormat("dd MMM").format(DateTime.now()).toString()),
+                Text(DateFormat("dd MMM").format(DateTime.now()).toString()),
                 filterIcon(context),
               ], mainAxisAlignment: MainAxisAlignment.spaceBetween),
               backgroundColor: Colors.grey.shade500),
@@ -51,6 +50,7 @@ class TripListingScreen extends StatelessWidget {
           floatingActionButton: FloatingActionButton(
               child: Icon(Icons.add),
               backgroundColor: Color.fromRGBO(225, 0, 117,1),
+              foregroundColor: Colors.white,
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => AddNewTripScreenWidget()));

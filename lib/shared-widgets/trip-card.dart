@@ -57,7 +57,8 @@ Widget getReserveButton() {
         shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(30.0)),
         splashColor: Color.fromRGBO(225, 0, 117, 1),
-        focusColor: Color.fromRGBO(225, 0, 117, 1),
+        focusColor: Colors.blueGrey[900],
+        highlightColor:Colors.blueGrey[900],
         child: const Text(
           'RESERVE',
           style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),

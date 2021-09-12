@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:mobile_najdiprevoz/screens/home.screen.dart';
 import 'package:mobile_najdiprevoz/shared-widgets/number-picker-widget.dart';
-import 'package:numberpicker/numberpicker.dart';
 
 List<String> cities = ['Struga', 'Ohrid', 'Strumica', 'Skopje'];
 
@@ -124,10 +122,11 @@ class AddNewTripScreenWidgetState extends State<AddNewTripScreenWidget> {
             fontWeight: FontWeight.bold, color: Color.fromRGBO(225, 0, 117, 1)),
       ),
       onPressed: (() => {
-            Navigator.push(
+            Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => HomeScreen(initialIndex: 0)))
+                    builder: (context) => HomeScreen(initialIndex: 0)),
+                    (Route<dynamic> route) => false)
           }),
     );
   }
@@ -165,22 +164,4 @@ class AddNewTripScreenWidgetState extends State<AddNewTripScreenWidget> {
         departureDate = picked;
       });
   }
-
-// Widget requestedSeatsInputBox() {
-//   return Container(
-//       margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
-//       padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-//       decoration: BoxDecoration(color: Colors.grey[200]),
-//       child: TextField(
-//           keyboardType: TextInputType.number,
-//           decoration: InputDecoration(
-//               border: InputBorder.none,
-//               enabledBorder: InputBorder.none,
-//               disabledBorder: InputBorder.none,
-//               hintText: "Minimum available seats"),
-//           inputFormatters: <TextInputFormatter>[
-//             FilteringTextInputFormatter.digitsOnly
-//           ]) // Only numbers can be entered
-//       );
-// }
 }
