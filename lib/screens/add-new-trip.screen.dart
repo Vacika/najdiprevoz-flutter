@@ -156,6 +156,19 @@ class AddNewTripScreenWidgetState extends State<AddNewTripScreenWidget> {
     final DateTime picked = await showDatePicker(
       context: context,
       initialDate: departureDate != null ? departureDate : DateTime.now(),
+      builder: (BuildContext context, Widget child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            primaryColor: Color.fromRGBO(225, 0, 117, 1),
+            accentColor: Color.fromRGBO(225, 0, 117, 1),
+            colorScheme: ColorScheme.light(primary:Color.fromRGBO(225, 0, 117, 1)),
+            buttonTheme: ButtonThemeData(
+                textTheme: ButtonTextTheme.primary
+            ),
+          ),
+          child: child,
+        );
+      },
       // Refer step 1
       firstDate: DateTime.now(),
       lastDate: DateTime.now().add(Duration(days: 365)),

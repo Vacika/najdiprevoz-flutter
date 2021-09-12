@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Fix number picker and include it into search trip">
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Login colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/login.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631480643306</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login colors">
+      <created>1631481354693</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631481354693</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -115,7 +123,8 @@
     <MESSAGE value="few fixes" />
     <MESSAGE value="Centering" />
     <MESSAGE value="Fix number picker and include it into search trip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix number picker and include it into search trip" />
+    <MESSAGE value="Login colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login colors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
