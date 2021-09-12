@@ -83,14 +83,15 @@ class SearchTripsWidgetState extends State<SearchTripsWidget> {
     return TextButton(
       child: const Text(
         'SUBMIT',
-        style: TextStyle(fontWeight: FontWeight.bold),
+        style: TextStyle(
+            fontWeight: FontWeight.bold, color: Color.fromRGBO(225, 0, 117, 1)),
       ),
       onPressed: (() => {
             Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(
                     builder: (context) => HomeScreen(initialIndex: 0)),
-                    (Route<dynamic> route) => false)
+                (Route<dynamic> route) => false)
           }),
     );
   }
@@ -111,19 +112,29 @@ class SearchTripsWidgetState extends State<SearchTripsWidget> {
                     departureDate != null
                         ? "${departureDate.toLocal()}".split(' ')[0]
                         : 'Choose a date',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey[700]
-                    ),
+                    style: TextStyle(fontSize: 15, color: Colors.grey[700]),
                     textAlign: TextAlign.start))));
   }
 
   _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
       context: context,
-      initialDate: departureDate != null? departureDate : DateTime.now(), // Refer step 1
+      initialDate: departureDate != null ? departureDate : DateTime.now(),
+      // Refer step 1
       firstDate: DateTime.now(),
       lastDate: DateTime.now().add(Duration(days: 365)),
+      builder: (BuildContext context, Widget child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            primaryColor: Color.fromRGBO(225, 0, 117, 1),
+            accentColor: Color.fromRGBO(225, 0, 117, 1),
+            colorScheme:
+                ColorScheme.light(primary: Color.fromRGBO(225, 0, 117, 1)),
+            buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
+          ),
+          child: child,
+        );
+      },
     );
     if (picked != null && picked != departureDate)
       setState(() {

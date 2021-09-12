@@ -51,6 +51,7 @@ class CustomNumberPickerState extends State<CustomNumberPicker> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             IconButton(
+              color: Color.fromRGBO(225, 0, 117, 1),
               icon: Icon(Icons.remove),
               onPressed: () => setState(() {
                 final newValue = currentValue - widget.step;
@@ -62,6 +63,7 @@ class CustomNumberPickerState extends State<CustomNumberPicker> {
             ),
             Text('${widget.title}: $currentValue'),
             IconButton(
+              color: Color.fromRGBO(225, 0, 117, 1),
               icon: Icon(Icons.add),
               onPressed: () => setState(() {
                 final newValue = currentValue + widget.step;

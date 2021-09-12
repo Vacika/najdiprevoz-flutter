@@ -29,7 +29,9 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Login with existing \n or create a new account', style: TextStyle(fontSize: 26,
+            Text('Login with existing \nor create a new account',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 26,
                 color: Color.fromRGBO(225, 0, 117, 1),
                 fontWeight: FontWeight.bold),),
             Divider(
@@ -39,7 +41,7 @@ class LoginScreen extends StatelessWidget {
             ),
             Divider(
               color: Colors.white,
-              height: 100,
+              height: 40,
               thickness: 0,
             ),
             TextField(

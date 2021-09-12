@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Login colors">
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="date picker colors and number picker colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/login.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" afterDir="false" />
     </list>
@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631481354693</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="date picker colors and number picker colors">
+      <created>1631481761943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631481761943</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -124,7 +131,8 @@
     <MESSAGE value="Centering" />
     <MESSAGE value="Fix number picker and include it into search trip" />
     <MESSAGE value="Login colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login colors" />
+    <MESSAGE value="date picker colors and number picker colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="date picker colors and number picker colors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
