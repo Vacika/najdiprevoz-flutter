@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mobile_najdiprevoz/screens/home.screen.dart';
+import 'package:mobile_najdiprevoz/shared-widgets/number-picker-widget.dart';
 
 List<String> cities = ['Struga', 'Ohrid', 'Strumica', 'Skopje'];
 
@@ -42,8 +43,18 @@ class SearchTripsWidgetState extends State<SearchTripsWidget> {
                                 toLocation = chosenCity;
                               }),
                           'To'),
-                      requestedSeatsInputBox(),
                       dateInputBox(),
+                      CustomNumberPicker(
+                        min: 1,
+                        max: 6,
+                        step: 1,
+                        title: 'Minimum available seats',
+                        onChangeFn: (value) {
+                          setState(() {
+                            requestedSeats = value;
+                          });
+                        },
+                      ),
                       submitButton(),
                     ]))));
   }
@@ -75,10 +86,11 @@ class SearchTripsWidgetState extends State<SearchTripsWidget> {
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
       onPressed: (() => {
-            Navigator.push(
+            Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => HomeScreen(initialIndex: 0)))
+                    builder: (context) => HomeScreen(initialIndex: 0)),
+                    (Route<dynamic> route) => false)
           }),
     );
   }

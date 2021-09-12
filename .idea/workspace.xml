@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="few fixes">
-      <change afterPath="$PROJECT_DIR$/lib/screens/settings.screen.dart" afterDir="false" />
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Centering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/login.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631479342490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Centering">
+      <created>1631480334738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631480334738</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -100,7 +107,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add trip" />
     <MESSAGE value="few fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="few fixes" />
+    <MESSAGE value="Centering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centering" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

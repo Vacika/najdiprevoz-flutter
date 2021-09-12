@@ -54,6 +54,7 @@ class AddNewTripScreenWidgetState extends State<AddNewTripScreenWidget> {
                         min: 1,
                         max: 6,
                         step: 1,
+                        title: 'Available seats',
                         onChangeFn: (value) {
                           setState(() {
                             seatsAvailable = value;

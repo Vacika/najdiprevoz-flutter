@@ -6,10 +6,11 @@ class CustomNumberPicker extends StatefulWidget {
   final int min;
   final int max;
   final int step;
+  final String title;
   final onChangeFn;
 
   const CustomNumberPicker(
-      {Key key, this.min, this.max, this.step, this.onChangeFn})
+      {Key key, this.min, this.max, this.step, this.title, this.onChangeFn})
       : super(key: key);
 
   @override
@@ -55,18 +56,18 @@ class CustomNumberPickerState extends State<CustomNumberPicker> {
                 final newValue = currentValue - widget.step;
                 if (newValue >= widget.min) {
                   currentValue = newValue;
-                  widget.onChangeFn(newValue);
+                  // widget.onChangeFn(newValue);
                 }
               }),
             ),
-            Text('Available seats: $currentValue'),
+            Text('${widget.title}: $currentValue'),
             IconButton(
               icon: Icon(Icons.add),
               onPressed: () => setState(() {
                 final newValue = currentValue + widget.step;
                 if (newValue <= widget.max) {
                   currentValue = newValue;
-                  widget.onChangeFn(newValue);
+                  // widget.onChangeFn(newValue);
                 }
               }),
             ),
