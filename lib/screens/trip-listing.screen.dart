@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_najdiprevoz/interfaces/trip-list-response.dart';
 import 'package:mobile_najdiprevoz/interfaces/user-short-response.dart';
+import 'package:mobile_najdiprevoz/screens/add-new-trip.screen.dart';
 import 'package:mobile_najdiprevoz/shared-widgets/search-trips-widget.dart';
 import 'package:mobile_najdiprevoz/shared-widgets/trip-card.dart';
 import 'package:intl/intl.dart';
@@ -26,33 +27,44 @@ class TripListingScreen extends StatelessWidget {
   TripListingScreen({Key key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-          title: Row(children: [
-            Text("Trips - " +
-                DateFormat("dd MMM").format(DateTime.now()).toString()),
-            filterIcon(context),
-          ], mainAxisAlignment: MainAxisAlignment.spaceBetween),
-          backgroundColor: Colors.grey.shade500),
-      backgroundColor: Colors.grey.shade200,
-      body: ListView(
-        children: [
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse),
-          TripCard(trip: tripListResponse)
-        ],
-      ));
+  Widget build(BuildContext context) =>
+      Scaffold(
+          appBar: AppBar(
+              title: Row(children: [
+                Text("Trips - " +
+                    DateFormat("dd MMM").format(DateTime.now()).toString()),
+                filterIcon(context),
+              ], mainAxisAlignment: MainAxisAlignment.spaceBetween),
+              backgroundColor: Colors.grey.shade500),
+          backgroundColor: Colors.grey.shade200,
+          body: ListView(
+            children: [
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse),
+              TripCard(trip: tripListResponse)
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(
+              child: Icon(Icons.add),
+              backgroundColor: Color.fromRGBO(225, 0, 117,1),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => AddNewTripScreenWidget()));
+              }
+          ));
 }
 
 Widget filterIcon(context) {
   return IconButton(
       icon: Icon(Icons.filter_alt_rounded),
-      onPressed: (() => {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SearchTripsWidget()))
-          }));
+      tooltip: "Filter",
+      onPressed: (() =>
+      {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => SearchTripsWidget()))
+      }));
 }

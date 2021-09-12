@@ -11,7 +11,5 @@ class NotificationsScreenWidget extends StatelessWidget {
 
 
 Widget getNotification(){
-  return Container(
-
-  )
+  throw UnimplementedError();
 }

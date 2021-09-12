@@ -19,7 +19,13 @@ class HomeScreen extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            toolbarHeight: 85,
+            backgroundColor: Color.fromRGBO(225, 0, 117,1) ,
+            primary: true,
             bottom: TabBar(
+              indicatorColor: Colors.white,
+              unselectedLabelColor: Colors.white54,
+              labelColor: Colors.white,
               tabs: [
                 Tab(
                   icon: Icon(Icons.car_rental),
@@ -35,7 +41,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            title: Text('Trip Finder'),
           ),
           body: TabBarView(
             children: [TripListingScreen(), LoginScreen(), LoginScreen()],
@@ -72,3 +77,10 @@ class LogoutButton extends StatelessWidget {
 //               ? Text("An error occurred${snapshot.error}")
 //               : CircularProgressIndicator()),
 // ),
+
+
+//#d81b60 primary
+// P-Dark #a00037
+// P-Light #ff5c8d
+
+// SECONDARY WHITE

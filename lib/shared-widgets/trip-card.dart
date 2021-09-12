@@ -20,16 +20,15 @@ Widget getCard(TripListResponse trip) {
       child: Container(
           padding: EdgeInsetsDirectional.fromSTEB(5, 10, 5, 10),
           child: Card(
-            // margin: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 10),
+              // margin: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 10),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30)
-              ),
+                  borderRadius: BorderRadius.circular(30)),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   ListTile(
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
-                          20, 20, 20, 20),
+                      contentPadding:
+                          EdgeInsetsDirectional.fromSTEB(20, 20, 20, 20),
                       leading: departureTime(trip.departureTime),
                       title: destinationAndPriceWidget(
                           trip.from, trip.to, trip.pricePerHead),
@@ -37,9 +36,8 @@ Widget getCard(TripListResponse trip) {
                         children: [
                           Expanded(
                               flex: 2,
-                              child: Text(
-                                  trip.availableSeats.toString() +
-                                      " seats left")),
+                              child: Text(trip.availableSeats.toString() +
+                                  " seats left")),
                           Expanded(child: tripAdditionalDetails(), flex: 2)
                         ],
                         mainAxisSize: MainAxisSize.max,
@@ -58,13 +56,13 @@ Widget getReserveButton() {
       OutlineButton(
         shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(30.0)),
-        splashColor: Colors.lightBlue,
-        focusColor: Colors.white70,
+        splashColor: Color.fromRGBO(225, 0, 117, 1),
+        focusColor: Color.fromRGBO(225, 0, 117, 1),
         child: const Text(
           'RESERVE',
-          style: TextStyle(
-              color: Colors.green, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
         ),
+        color: Color.fromRGBO(225, 0, 117, 1),
         onPressed: () {
           /* ... */
         },
@@ -102,7 +100,7 @@ Widget circleImage(String image) {
       width: 50,
       child: ClipOval(child: convertedImage),
       decoration:
-      new BoxDecoration(color: Colors.blue, shape: BoxShape.circle));
+          new BoxDecoration(color: Colors.white, shape: BoxShape.circle));
 }
 
 Widget userBasicInfo(TripListResponse trip) {
