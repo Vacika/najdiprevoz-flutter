@@ -68,28 +68,29 @@ class HomeScreenState extends State<HomeScreen> {
   }
 
   getTitle(int currentIndex) {
+    const appName = Text('TripBuddy', style: TextStyle(fontStyle: FontStyle.italic));
     switch (currentIndex) {
       case 0:
         return Row(
-          children: [Text('TripBuddy'), Text('Trips')],
+          children: [appName, Text('Trips')],
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         );
       case 1:
         return Row(
-          children: [Text('TripBuddy'), Text('Requests')],
+          children: [appName, Text('Requests')],
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         );
       case 2:
         return Row(
-          children: [Text('TripBuddy'), Text('Notifications')],
+          children: [appName, Text('Notifications')],
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         );
       case 3:
         return Row(
-          children: [Text('TripBuddy'), Text('Settings')],
+          children: [appName, Text('Settings')],
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         );

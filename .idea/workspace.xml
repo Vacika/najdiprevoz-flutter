@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Centering">
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Fix number picker and include it into search trip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add-new-trip.screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/number-picker-widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared-widgets/search-trips-widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/login.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/login.screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631480334738</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix number picker and include it into search trip">
+      <created>1631480643306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631480643306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -108,14 +114,15 @@
     <MESSAGE value="Add trip" />
     <MESSAGE value="few fixes" />
     <MESSAGE value="Centering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centering" />
+    <MESSAGE value="Fix number picker and include it into search trip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix number picker and include it into search trip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/screens/home.screen.dart</url>
-          <line>99</line>
+          <line>100</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
