@@ -1,4 +1,4 @@
-# TripBuddy-flutter
+# TripBuddy-Mobile
 Trip Buddy - Mobile application - Flutter
 
 
