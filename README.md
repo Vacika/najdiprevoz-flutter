@@ -1,2 +1,2 @@
 # TripBuddy-flutter
-Najdi Prevoz Mobile application
+Trip Buddy Mobile application
