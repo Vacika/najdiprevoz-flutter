@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Fix login screen alignment  + search trips">
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Notification screen WIP">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/notifications.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/notifications.screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="flutter.view.tool.window.visible" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/snap/flutter/common/flutter/bin/cache/dart-sdk" />
     <property name="project.structure.last.edited" value="Project" />
@@ -114,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631483641450</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Notification screen WIP">
+      <created>1631486125483</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631486125483</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -141,7 +150,8 @@
     <MESSAGE value="Login colors" />
     <MESSAGE value="date picker colors and number picker colors" />
     <MESSAGE value="Fix login screen alignment  + search trips" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix login screen alignment  + search trips" />
+    <MESSAGE value="Notification screen WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notification screen WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
