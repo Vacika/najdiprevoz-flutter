@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Notification screen WIP">
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Notification screen, implement mark as seen/unseen functionality">
+      <change afterPath="$PROJECT_DIR$/lib/screens/requests.screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/notifications.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/notifications.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/vasko/.android/avd/Pixel_5_API_30.avd]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -123,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631486125483</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Notification screen, implement mark as seen/unseen functionality">
+      <created>1634575649724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634575649724</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -151,7 +166,8 @@
     <MESSAGE value="date picker colors and number picker colors" />
     <MESSAGE value="Fix login screen alignment  + search trips" />
     <MESSAGE value="Notification screen WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notification screen WIP" />
+    <MESSAGE value="Notification screen, implement mark as seen/unseen functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notification screen, implement mark as seen/unseen functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
