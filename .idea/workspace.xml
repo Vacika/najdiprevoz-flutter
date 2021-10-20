@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="Notification screen, implement mark as seen/unseen functionality">
-      <change afterPath="$PROJECT_DIR$/lib/screens/requests.screen.dart" afterDir="false" />
+    <list default="true" id="dbc57e2c-efa1-48e0-9407-1c9d13bc3153" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/ed7fe03ddd68b3013c1d9f2b167693be/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/requests.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/requests.screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634575649724</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Reservation screen">
+      <created>1634672388291</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634672388291</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -167,7 +178,8 @@
     <MESSAGE value="Fix login screen alignment  + search trips" />
     <MESSAGE value="Notification screen WIP" />
     <MESSAGE value="Notification screen, implement mark as seen/unseen functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notification screen, implement mark as seen/unseen functionality" />
+    <MESSAGE value="Reservation screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reservation screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
